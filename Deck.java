@@ -21,7 +21,7 @@ public class Deck implements DeckActions{
 
     @Override
     public Card dealNextCard() {
-        if (myCards.size() > 0) {
+        if (!myCards.isEmpty()) {
             return myCards.remove(myCards.size() - 1);
         }
         return null; // Deck is empty, return null.
