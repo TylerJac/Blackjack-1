@@ -14,6 +14,7 @@ public class GameRunner {
         // create a deck
         Deck deck = new Deck();
         deck.shuffle();
+        System.out.println("Enter your name ");
         String user = sc.nextLine();
         Player player = new Player(user, 100);
         Player dealer = new Player("Dealer", 0);
@@ -38,7 +39,7 @@ public class GameRunner {
         // display initial cards
         System.out.println("Player's cards:");
         player.displayCards();
-        System.out.println("Dealer's cards:");
+        System.out.println("\nDealer's cards:");
         dealer.displayCards();
 
         // Player's turn
